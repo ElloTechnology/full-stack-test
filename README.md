@@ -66,7 +66,7 @@ and the `tokens` for this for this `content` look like this
 
 The first task will be to map the `tokens` to the page `content`, and represent it in a view. The view should show the page `content` in it's original format. The words should be clickable and when clicked they should take us to a second view which will display the token `value`. E.g If I click `4` in `"A cow has 4 legs."` It should open another view and pass `four` from the `tokens` array to that view and display it.
 
-Make sure to make the text large enough to be clickable. Also take into account how panctuation will react when the text is wrapped, i.e if `"A cow has 4 legs."` is wrapped the `"` should still be next to the `A`. They should not end up on different lines.
+Make sure to make the text large enough to be clickable. Also take into account how punctuation will react when the text is wrapped, i.e if `"A cow has 4 legs."` is wrapped the `"` should still be next to the `A`. They should not end up on different lines.
 
 ### Task 2:
 
