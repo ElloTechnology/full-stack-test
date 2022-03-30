@@ -4,9 +4,11 @@
 At Ello we are building a virtual reading coach that works with real books. As part of the Ello app we have an AI model that listens to users audio. One of the problems that we have had to solve is to make sure we always pass data that the AI model can recognize, for instance if we have the number `100` in the book text, the AI model can interpret `one hundred` but not `100`. To solve this issue we tokenized our books making sure that for all our book content we have tokens, which is the same text but in a format that the AI model can recognize. We then use a combination of book text and tokens in the application where we present the book text in its original format to the user, but pass tokens to the AI model.
 
 
-Note: Please don't fork this repository, or create a pull request against it. Otherwise other applicants may take inspiration from it. Once the coding challenge is completed, email your solution (Github link) and resume to James Mwangi (hiring manager) at james@helloello.com.
+Note: Please don't fork this repository, or create a pull request against it. Otherwise other applicants may take inspiration from it. Once the coding challenge is completed, email your solution (Github link) and resume to [james@helloello.com](mailto:james@helloello.com).
 
-In this code challenge you will build a ReactJS web app that will call a GraphQL API (Todo add API link here), the API will return a `book` object.
+
+## Challenge
+In this code challenge you will build a ReactJS web app that will call a [GraphQL API](https://fullstack-engineer-test-n4ouilzfna-uc.a.run.app/graphql), the API will return a `book` object.
 
 The book has a field called `pages` which is an array of page objects. The page objects contain a field called `content` which is the page content and another field called `tokens` which is an array of tokenized page contents.
 
