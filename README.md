@@ -8,7 +8,7 @@ Note: Please don't fork this repository, or create a pull request against it. Ot
 
 ## Challenge
 
-In this code challenge you will build a ReactJS web app that will call a [GraphQL API](https://fullstack-engineer-test-n4ouilzfna-uc.a.run.app/graphql). The API will return a `book` object.
+In this code challenge you will build a ReactJS web app from the ground up. You have to setup a GraphQL client to query our GraphQL API endpoint https://fullstack-engineer-test-n4ouilzfna-uc.a.run.app/graphql. The API will return a `book` object.
 
 The book has a field called `pages` which is an array of page objects. The page objects contain a field called `content` which is the page text and another field called `tokens` which is an array of tokenized page text.
 
@@ -76,3 +76,10 @@ Create a user interface for the book. It should show the left and right pages on
 ___
 
 The application is fairly simple, so you might not want to use any state management libraries – in this case please make sure your state management is clean and simple. As well, we value the use of the latest features of react. Make sure to include clear and concise commits while working through the challenge.
+
+**You will be evaluated on:**
+
+- Functional correctness
+- Code clarity/structure
+- Comments/documentation where necessary
+- Cdd style for bonus points
