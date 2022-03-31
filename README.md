@@ -1,4 +1,4 @@
-# Ello - Fullstack Engineer Coding Challenge
+# Ello - Full Stack Engineer Coding Challenge
 
 ### Problem Context
 
