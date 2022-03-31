@@ -77,7 +77,7 @@ ___
 
 The application is fairly simple, so you might not want to use any state management libraries – in this case please make sure your state management is clean and simple. As well, we value the use of the latest features of react. Make sure to include clear and concise commits while working through the challenge.
 
-**You will be evaluated on:**
+## You will be evaluated on
 
 - Functional correctness
 - Code clarity/structure
