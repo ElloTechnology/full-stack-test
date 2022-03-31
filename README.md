@@ -80,6 +80,6 @@ The application is fairly simple, so you might not want to use any state managem
 ## You will be evaluated on
 
 - Functional correctness
-- Code clarity/structure
-- Comments/documentation where necessary
-- Cdd style for bonus points
+- Code clarity / structure
+- Comments / documentation where necessary
+- CSS styling for bonus points
