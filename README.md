@@ -4,7 +4,7 @@
 
 At Ello we are building a virtual reading coach that works with real books. As part of the Ello app we have a speech recognition model that listens to users audio. One of the problems that we have had to solve is to make sure we always pass data that the model can recognize, for instance if we have the number `100` in the book text, the model can interpret `one hundred` but not `100`. To solve this issue we tokenized our books. Tokens help us to ensure that for all our book content we have text that the model can recognize. We then use a combination of book text and tokens in the application where we present the book text in its original format to the user, but pass tokenized text to the model.
 
-Note: Please don't fork this repository, or create a pull request against it. Otherwise other applicants may take inspiration from it. Once the coding challenge is completed, email your solution (Github link) and resume to [james@helloello.com](mailto:james@helloello.com).
+Note: Please don't fork this repository, or create a pull request against it. Otherwise other applicants may take inspiration from it. Once the coding challenge is completed, email your solution link and resume to [james@helloello.com](mailto:james@helloello.com).
 
 ## Challenge
 
@@ -19,6 +19,7 @@ For example page content might look like this:
 ```
 
 and the `tokens` for this for this `content` looks like this
+
 
 ```
 [
