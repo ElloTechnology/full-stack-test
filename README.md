@@ -4,11 +4,11 @@
 
 At Ello we are building a virtual reading coach that works with real books. As part of the Ello app we have a speech recognition model that listens to users audio. One of the problems that we have had to solve is to make sure we always pass data that the model can recognize, for instance if we have the number `100` in the book text, the model can interpret `one hundred` but not `100`. To solve this issue we tokenized our books. Tokens help us to ensure that for all our book content we have text that the model can recognize. We then use a combination of book text and tokens in the application where we present the book text in its original format to the user, but pass tokenized text to the model.
 
-Note: Please don't fork this repository, or create a pull request against it. Otherwise other applicants may take inspiration from it. Once the coding challenge is completed, email your solution link and resume to [james@helloello.com](mailto:james@helloello.com).
+Note: Please don't fork this repository, or create a pull request against it. Otherwise other applicants may take inspiration from it. You should create another repository for the challenge. Once the coding challenge is completed, email your solution link and resume to [james@helloello.com](mailto:james@helloello.com).
 
 ## Challenge
 
-In this code challenge you will build a ReactJS web app from the ground up. You have to setup a GraphQL client to query our GraphQL API endpoint https://fullstack-engineer-test-n4ouilzfna-uc.a.run.app/graphql. The API will return a `book` object.
+In this code challenge you will build a ReactJS web app from the ground up. You have to setup a GraphQL client to query our GraphQL API endpoint https://fullstack-engineer-test-n4ouilzfna-uc.a.run.app/graphql. The API will return a `book` object. You can learn more about GraphQL here https://graphql.org/learn/.
 
 The book has a field called `pages` which is an array of page objects. The page objects contain a field called `content` which is the page text and another field called `tokens` which is an array of tokenized page text.
 
