@@ -70,7 +70,7 @@ Make sure to make the text large enough to be clickable. Also take into account 
 
 ### Challenge 2
 
-Create a user interface for the book. It should show the left and right pages on a single view, there should be some navigation button that will allow a user to move to the next double page. This should work in tandem with Challenge 1 i.e. The content on each page should be clickable. Please note that some pages might have no content, that is okay, just show a blank page. The UI doesn't have to be complex, avoid css frameworks.
+Create a user interface for the book. It should show the left and right pages on a single view, there should be some navigation button that will allow a user to move to the next double page. This should work in tandem with Challenge 1 i.e. The content on each page should be clickable. Please note that some pages might have no content, that is okay, just show a blank page. The UI doesn't have to be complex, avoid CSS frameworks.
 
 ___
 
