@@ -85,6 +85,10 @@ Make sure to make the text large enough to be clickable. Also take into account 
 
 **Tip:** Avoid splitting page content using space or any other punctuation and using the index to get the token. In some edge cases this will fail, e.g. if you split using space then it will fail when we have hyphens. Think about how you can use the token `position` to extract clickable words e.g `The` should be the clickable word but not `"The`. The page `content` displayed must be **exactly** the same, do not delete punctuation, or capitalize words.
 
+![](https://github.com/ElloTechnology/full-stack-test/blob/main/ezgif-4-61ef17b8bc.gif)
+
+Here is sample of what we have, your UI doesn't have to be similar, and there are no images for the challenge, feel free to be as creative as you want.
+
 ### Part 2
 
 Create a user interface for the book. It should show the left and right pages on a single view, there should be some navigation button that will allow a user to move to the next double page. This should work in tandem with Part 1, i.e. The content on each page should be clickable. Please note that some pages might have no content and that is okay; just show a blank page. The UI doesn't have to be complex. Avoid CSS frameworks.
