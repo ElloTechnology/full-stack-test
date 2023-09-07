@@ -81,9 +81,13 @@ and the `tokens` for this for this `content` looks like this
 
 The first task will be to map the `tokens` to the page `content`, and represent it in a view. The view should show the page `content` in its original format. The words should be clickable and when clicked they should take us to a second view which will display the token `value`. E.g If I click `50` in `"The quick-thinking boy earned 50 pennies."` It should open another view and pass `fifty` from the `tokens` array to that view.
 
-Make sure to make the text large enough to be clickable. Also take into account how punctuation will react when the text is wrapped, i.e if `"The quick-thinking boy earned 50 pennies."` is wrapped the `"` should still be next to the `The`. They should not end up on different lines, even if we resize the screen.
+To ensure the punctuation is retained and that the text behaves correctly when wrapped, consider the following:
 
-**Tip:** Avoid splitting page content using space or any other punctuation and using the index to get the token. In some edge cases this will fail, e.g. if you split using space then it will fail when we have hyphens. Think about how you can use the token `position` to extract clickable words e.g `The` should be the clickable word but not `"The`. The page `content` displayed must be **exactly** the same, do not delete punctuation or capitalize words.
+- Retaining Punctuation: Make sure to keep punctuation marks (e.g., commas, periods, quotation marks) in their original positions within the text. For example, do not change `"The quick-thinking boy earned 50 pennies."` to `The quick thinking boy earned 50 pennies` by removing punctuation.
+
+- Handling Wrapping: When the text is wrapped to fit within the available space, ensure that punctuation marks remain adjacent to the words they belong to. For instance, if "The quick-thinking boy earned 50 pennies." is wrapped, make sure that the `"` remains next to `The`, and they do not end up on different lines, even if the screen size is adjusted.
+
+**Tip**: Avoid splitting the page content using spaces or other punctuation marks and then relying on the index to obtain the token. This approach may fail in certain edge cases, such as when dealing with hyphens. Instead, consider how you can utilize the token positions to extract clickable words. For example, `The` should be a clickable word, but not the quoted version, `"The` Ensure that the displayed page content remains unchanged, preserving punctuation and capitalization.
 
 ![](https://github.com/ElloTechnology/full-stack-test/blob/main/ezgif-4-61ef17b8bc.gif)
 
