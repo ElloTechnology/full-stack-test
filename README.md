@@ -89,6 +89,9 @@ To ensure the punctuation is retained and that the text behaves correctly when w
 
   <img width="555" alt="Screenshot 2023-09-07 at 14 39 26" src="https://github.com/ElloTechnology/full-stack-test/assets/3518127/a6c7771a-7cd7-4685-8509-c2ccc74b33c3">
 
+  <img width="340" alt="Screenshot 2023-09-07 at 15 09 50" src="https://github.com/ElloTechnology/full-stack-test/assets/3518127/a41823a5-741a-4470-9f2e-456151cebe44">
+
+
 
 **Tip**: Avoid splitting the page content using space delimeters then relying on the index to obtain the token.
 
