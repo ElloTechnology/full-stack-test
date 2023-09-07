@@ -15,7 +15,7 @@ The book has a field called `pages` which is an array of page objects. The page 
 For example page content might look like this:
 
 ```
-"The quick-thinking boy earned 50 pennies."
+'"The quick-thinking boy earned 50 pennies."'
 ```
 
 and the `tokens` for this for this `content` looks like this
@@ -87,7 +87,7 @@ To ensure the punctuation is retained and that the text behaves correctly when w
 
 - Handling Wrapping: When the text is wrapped to fit within the available space, ensure that punctuation marks remain adjacent to the words they belong to. For instance, if "The quick-thinking boy earned 50 pennies." is wrapped, make sure that the `"` remains next to `The`, and they do not end up on different lines, even if the screen size is adjusted.
 
-**Tip**: Avoid splitting the page content using spaces or other punctuation marks and then relying on the index to obtain the token. This approach may fail in certain edge cases, such as when dealing with hyphens. Instead, consider how you can utilize the token positions to extract clickable words. For example, `The` should be a clickable word, but not the quoted version, `"The`. Ensure that the displayed page content remains unchanged, preserving punctuation and capitalization.
+**Tip**: Avoid splitting the page content using space delimeters then relying on the index to obtain the token.
 
 ![](https://github.com/ElloTechnology/full-stack-test/blob/main/ezgif-4-61ef17b8bc.gif)
 
