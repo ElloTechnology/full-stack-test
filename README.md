@@ -15,7 +15,7 @@ Write a GraghQL server that when queried  will return a book, use the 2 books in
 
 
 ### Part 2
-In the second part of the challenge you are going to create a React application that consumes the GraphQL API created in the first part of the challenge, you will then try to solve challenge that we have also worked on before relating to mapping book page content to tokens, more on the challenge below.
+In the second part of the challenge you are going to create a React application that consumes the GraphQL API created in the first part of the challenge, you will then try to solve challenge that we have also worked on before, more on the challenge below.
 
 Create a user interface for the book. It should show the left and right pages on a single view, there should be some navigation button that will allow a user to move to the next double page. Please note that some pages might have no content and that is okay; just show a blank page. The UI doesn't have to be complex. Avoid CSS frameworks.
 
