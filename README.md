@@ -8,8 +8,6 @@ Note: Please don't fork this repository, or create a pull request against it. Ot
 
 ## Challenge
 
-In this code challenge you will build a **ReactJS** web app from the ground up. You have to setup a GraphQL client to query our GraphQL API endpoint https://fullstack-engineer-test-n4ouilzfna-uc.a.run.app/graphql. The API will return a `book` object. You can learn more about GraphQL here https://graphql.org/learn/.
-
 ### Part 1
 Write a GraghQL server that when queried  will return a book, use the 2 books in the `resources` folder. You don't need to set up a database for the task but you can go into as much detail in your solution as you want. Keep it in mind we will be looking into other factors too such as code organisation, variable naming e.t.c so be sure to put your step forward for well organised and readable code. The solution should be implemented in Node.js but feel free to use whatever libraries and tools that fits you.
 
