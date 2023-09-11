@@ -15,7 +15,7 @@ The book has a field called `pages` which is an array of page objects. The page 
 For example page content might look like this:
 
 ```
-'"The quick-thinking boy earned 50 pennies."'
+"\"The quick-thinking boy earned 50 pennies.\""
 ```
 
 and the `tokens` for this for this `content` looks like this
