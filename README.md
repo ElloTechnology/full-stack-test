@@ -114,15 +114,15 @@ ___
 
 The application is relatively simple, so you may not need to use any state management libraries. In this case, please ensure that your state management remains clean and straightforward. Additionally, we highly appreciate the utilization of the latest React features. Please remember to include clear and concise commits as you progress through the challenge.
 
+### Part 3
+In the final part of the challenge, your task is to create an Infrastructure as Code (IAC) solution using AWS and Terraform to deploy the application, preferably using AWS Fargate or a similar service. You are encouraged to make use of the AWS free tier for this endeavor. Please strive to adhere to best practices and share your code along with URLs where the applications are deployed.
+
+Bonus:
+Set up CI/CD using a tool of your choice, preferably GitHub Actions.
+
 ## You will be evaluated on
 
 - Functional correctness
 - Code clarity / structure
 - Comments / documentation where necessary
 - CSS styling for bonus points
-
-### Part 3
-In the final part of the challenge, your task is to create an Infrastructure as Code (IAC) solution using AWS and Terraform to deploy the application, preferably using AWS Fargate or a similar service. You are encouraged to make use of the AWS free tier for this endeavor. Please strive to adhere to best practices and share your code along with URLs where the applications are deployed.
-
-Bonus:
-Set up CI/CD using a tool of your choice, preferably GitHub Actions.
