@@ -10,6 +10,17 @@ Note: Please don't fork this repository, or create a pull request against it. Ot
 
 In this code challenge you will build a **ReactJS** web app from the ground up. You have to setup a GraphQL client to query our GraphQL API endpoint https://fullstack-engineer-test-n4ouilzfna-uc.a.run.app/graphql. The API will return a `book` object. You can learn more about GraphQL here https://graphql.org/learn/.
 
+### Part 1
+Write a GraghQL server that when queried  will return a book, use the 2 books in the `resources` folder. You don't need to set up a database for the task but you can go into as much detail in your solution as you want. Keep it in mind we will be looking into other factors too such as code organisation, variable naming e.t.c so be sure to put your step forward for well organised and readable code. The solution should be implemented in Node.js but feel free to use whatever libraries and tools that fits you.
+
+
+### Part 2
+In the second part of the challenge you are going to create a React application that consumes the GraphQL API created in the first part of the challenge, you will then try to solve challenge that we have also worked on before relating to mapping book page content to tokens, more on the challenge below.
+
+Create a user interface for the book. It should show the left and right pages on a single view, there should be some navigation button that will allow a user to move to the next double page. Please note that some pages might have no content and that is okay; just show a blank page. The UI doesn't have to be complex. Avoid CSS frameworks.
+
+This next part of the challenge meant to look into your problem solving skills, so make sure you understand the problem, we'll be paying close attention on how you go about solving the problem and how easy it is to follow your code.
+
 The book has a field called `pages` which is an array of page objects. The page objects contain a field called `content` which is the page text and another field called `tokens` which is an array of tokenized page text.
 
 For example page content might look like this:
@@ -77,8 +88,6 @@ and the `tokens` for this for this `content` looks like this
 
 `position` is an array containing the start and end index of a word.
 
-### Part 1
-
 The first task will be to map the `tokens` to the page `content`, and represent it in a view. The view should show the page `content` in its original format. The words should be clickable and when clicked they should take us to a second view which will display the token `value`. E.g If I click `50` in `"The quick-thinking boy earned 50 pennies."` It should open another view and pass `fifty` from the `tokens` array to that view.
 
 To ensure the punctuation is retained and that the text behaves correctly when wrapped, consider the following:
@@ -101,10 +110,6 @@ To ensure the punctuation is retained and that the text behaves correctly when w
 
 Here is sample of what we have, your UI doesn't have to be similar, and there are no images for the challenge, feel free to be as creative as you want.
 
-### Part 2
-
-Create a user interface for the book. It should show the left and right pages on a single view, there should be some navigation button that will allow a user to move to the next double page. This should work in tandem with Part 1, i.e. The content on each page should be clickable. Please note that some pages might have no content and that is okay; just show a blank page. The UI doesn't have to be complex. Avoid CSS frameworks.
-
 ___
 
 The application is fairly simple, so you might not want to use any state management libraries – in this case please make sure your state management is clean and simple. As well, we value the use of the latest features of React. Make sure to include clear and concise commits while working through the challenge.
@@ -115,3 +120,9 @@ The application is fairly simple, so you might not want to use any state managem
 - Code clarity / structure
 - Comments / documentation where necessary
 - CSS styling for bonus points
+
+### Part 3
+In the final part of the challenge, your task is to create an Infrastructure as Code (IAC) solution using AWS and Terraform to deploy the application, preferably using AWS Fargate or a similar service. You are encouraged to make use of the AWS free tier for this endeavor. Please strive to adhere to best practices and share your code along with URLs where the applications are deployed.
+
+Bonus:
+Set up CI/CD using a tool of your choice (prefarrably Github actions)
