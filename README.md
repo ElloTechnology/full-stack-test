@@ -1,23 +1,25 @@
 # Ello - Full Stack Engineer Coding Challenge
 
-### Problem Context
+### About Ello
 
-At Ello, we are developing a virtual reading coach that interacts with real books. Our app utilizes a speech recognition model capable of analyzing user audio. One challenge we've encountered is ensuring consistent data that the model can recognize. This model can only identify words from the alphabet dictionary. For example, if the book text contains the number 100, the model can understand "one hundred" but not "100." To address this issue, we tokenize our books. This approach ensures that we can display text to the child exactly as it appears in the book while also providing words to the model that we can track. It maintains a one-to-one correspondence between the two. In our application, we combine both the original book text and tokenized text, presenting the book text in its original format to the user while passing tokenized text to the model.
+Ello is a forward-thinking educational technology company dedicated to revolutionizing the way children learn to read. Our mission is to empower young readers with the tools they need to become proficient and passionate readers. We believe that fostering a love for reading is essential for a child's academic and personal growth
 
-Note: Please don't fork this repository, or create a pull request against it. Otherwise other applicants may take inspiration from it. You should create another repository for the challenge. Once the coding challenge is completed, email your solution link and resume to [james@helloello.com](mailto:james@helloello.com).
+Note: Please don't fork this repository, or create a pull request against it. Otherwise other applicants may take inspiration from it. You should create another repository for the challenge. Once the coding challenge is completed, email your solution link and resume to [erin@ello.com](mailto:erin@ello.com).
 
 ## Challenge
 
 ### Part 1
-Write a GraghQL server that when queried  will return a book, use the 2 books in the `resources` folder. You don't need to set up a database for the task but you can go into as much detail in your solution as you want. Keep it in mind we will be looking into other factors too such as code organisation, variable naming e.t.c so be sure to put your step forward for well organised and readable code. The solution should be implemented in Node.js but feel free to use whatever libraries and tools that fits you.
+Create a GraphQL server that, upon querying, returns information about a book. You can use the two books available in the `resources` folder. For this task, there's no need to set up a database. However, you are encouraged to provide a detailed solution. Please keep in mind that we will evaluate other factors, including code organization, variable naming, and more. Ensure your code is well-organized and readable. The solution should be implemented in Node.js, but feel free to utilize libraries and tools that align with your preferences.
 
 
 ### Part 2
-In the second part of the challenge you are going to create a React application that consumes the GraphQL API created in the first part of the challenge, you will then try to solve challenge that we have also worked on before, more on the challenge below. You can put both applications in the same repository.
+In the second part of the challenge, your task is to create a React application that consumes the GraphQL API created in the first part of the challenge. Additionally, you will revisit a challenge that we have previously worked on, which will be discussed further below. You are also welcome to place both applications in the same repository.
 
-Create a user interface for the book. It should show the left and right pages on a single view, there should be some navigation button that will allow a user to move to the next double page. Please note that some pages might have no content and that is okay; just show a blank page. The UI doesn't have to be complex. Avoid CSS frameworks.
+Your objective is to design a user interface for the book. This interface should display both the left and right pages within a single view. Moreover, it should incorporate navigation buttons that allow users to advance to the next double page. It's worth noting that some pages may lack content, and it's perfectly acceptable to display a blank page in such cases. The user interface does not need to be overly intricate, and we suggest refraining from using CSS frameworks.
 
-This next part of the challenge meant to look into your problem solving skills, so make sure you understand the problem, we'll be paying close attention on how you go about solving the problem and how easy it is to follow your code.
+The next portion of the challenge is intended to assess your problem-solving skills. Therefore, it's crucial that you thoroughly grasp the problem statement. We will closely evaluate your approach to solving the problem and the clarity of your code.
+
+Problem context: Our app utilizes a speech recognition model capable of analyzing user audio. One challenge we've encountered is ensuring consistent data that the model can recognize. This model can only identify words from the **alphabet dictionary**. For example, if the book text contains the number 100, the model can understand "one hundred" but not "100." To address this issue, we tokenize our books. This approach ensures that we can display text to the child exactly as it appears in the book while also providing words to the model that we can track. It maintains a one-to-one correspondence between the two. In our application, we combine both the original book text and tokenized text, presenting the book text in its original format to the user while passing tokenized text to the model.
 
 The book has a field called `pages` which is an array of page objects. The page objects contain a field called `content` which is the page text and another field called `tokens` which is an array of tokenized page text.
 
@@ -110,7 +112,7 @@ Here is sample of what we have, your UI doesn't have to be similar, and there ar
 
 ___
 
-The application is fairly simple, so you might not want to use any state management libraries – in this case please make sure your state management is clean and simple. As well, we value the use of the latest features of React. Make sure to include clear and concise commits while working through the challenge.
+The application is relatively simple, so you may not need to use any state management libraries. In this case, please ensure that your state management remains clean and straightforward. Additionally, we highly appreciate the utilization of the latest React features. Please remember to include clear and concise commits as you progress through the challenge.
 
 ## You will be evaluated on
 
@@ -123,4 +125,4 @@ The application is fairly simple, so you might not want to use any state managem
 In the final part of the challenge, your task is to create an Infrastructure as Code (IAC) solution using AWS and Terraform to deploy the application, preferably using AWS Fargate or a similar service. You are encouraged to make use of the AWS free tier for this endeavor. Please strive to adhere to best practices and share your code along with URLs where the applications are deployed.
 
 Bonus:
-Set up CI/CD using a tool of your choice (prefarrably Github actions)
+Set up CI/CD using a tool of your choice, preferably GitHub Actions.
