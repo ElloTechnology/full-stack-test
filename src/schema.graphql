@@ -1,6 +1,11 @@
 type Query {
-  fetchBooks: [Book],
+  fetchBooks: Result,
   fetchBook(title: String): Book
+}
+
+type Result {
+  bookOne: Book,
+  bookTwo: Book
 }
 
 type Book {

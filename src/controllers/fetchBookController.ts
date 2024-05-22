@@ -1,7 +1,14 @@
 import fileReader from "../utils/fileReader.js";
+import pathBuilder from "../utils/pathBuilder.js";
 
-export default function fetchBooksController(bookTitle: string) {
-    const books = fileReader("../../resources/data.json");
+export default async function fetchBookController(bookTitle: string) {
+    const path: string = pathBuilder("../../resources/data.json", import.meta.url);
 
-    return books.then((books) => books.find((book) => book.title === bookTitle));
+    const books: any = await fileReader(path);
+
+    const arrayOfBooks: [string, any][] = Object.entries(books);
+
+    const book = arrayOfBooks.find(([_, value]) => value.title === bookTitle)[1];
+
+    return book;
 }
