@@ -1,0 +1,21 @@
+type Query {
+  fetchBooks: [Book],
+  fetchBook(title: String): Book
+}
+
+type Book {
+  title: String,
+  author: String,
+  pages: [Page]
+}
+
+type Page {
+  pageIndex: Int,
+  content: String,
+  tokens: [Token]
+}
+
+type Token {
+  value: String,
+  position: [Int]
+}
