@@ -1,26 +1,31 @@
 import { ApolloServer } from "@apollo/server";
 import { startStandaloneServer } from "@apollo/server/standalone";
-import { existsSync } from "node:fs";
-import fileMerger from "./utils/fileMerger";
-import Query from "./resolvers/Query";
-import Book from "./resolvers/Book";
-import Page from "./resolvers/Page";
+import { existsSync, readFileSync } from "node:fs";
+import { fileURLToPath } from "node:url";
+import { dirname, resolve } from "node:path";
+
+import fileMerger from "./utils/fileMerger.js";
+import Query from "./resolvers/Query.js";
 
 // Check if file exits. If not, create a new file called data.json inside the resource folder
 // data.json contains data from provided resource files combined into one
 
-if (!existsSync("../resources/data.json")) {
-    async () => {
-        await fileMerger("../resources/a_color_of_his_own.json", "../resources/fishing_in_the_air.json");
-    }
+const filename = fileURLToPath(import.meta.url);
+const dir = dirname(filename);
+const filePathOne = resolve(dir, "../resources/a_color_of_his_own.json");
+const filePathTwo = resolve(dir, "../resources/fishing_in_the_air.json");
+const filePath = resolve(dir, "../resources/data.json");
+
+if (!existsSync(filePath)) {
+    (async () => {
+        await fileMerger(filePathOne, filePathTwo);
+    })()
 }
 
 const server: ApolloServer = new ApolloServer({
-    typeDefs: './schema.graphql',
+    typeDefs: readFileSync(resolve(dir, './schema.graphql'), "utf-8"),
     resolvers: {
         Query,
-        Book,
-        Page
     }
 });
 

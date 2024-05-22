@@ -7,6 +7,7 @@ export default async function fileReader(filePath: string): Promise<any> {
         data = await fs.readFile(filePath, {encoding: "utf8"});
     } catch (e) {
         console.log(e);
+        throw e;
     }
 
     return JSON.parse(data);
