@@ -1,3 +1,5 @@
+🚨 This repository has been archived and is not longer in use.
+
 # Ello - Full Stack Engineer Coding Challenge
 
 ### About Ello
